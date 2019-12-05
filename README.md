@@ -48,4 +48,25 @@ Once your changes are committed, your local copy of git is ready for later use. 
 `git remote add origin https://github.com/bowenwen/my_git_example.git`
 `git push -u origin master`
 
+You might now need a new branch, to either collaborate on a new feature or testing out stuff outside of your master branch code, to do this, simply run:
 
+`git branch my_branch`
+
+If you run `git status` now, you will see that you are still on the master branch, to work in the new branch, you need to check out the new branch. Make sure to commit or stash all your changes before switching branch as it will discard any changes:
+
+`git checkout my_branch`
+
+This is where I save a new `README.md`, run `git status` again, you will see `README.md` has changes, let's commit and push to the new branch:
+
+`git add .`
+
+`git commit`
+
+`git push origin my_branch`
+
+Finally, if you are interested in taking a closer look at the different branches and their commit history, try
+
+`gitk`
+
+
+You are now ready to take on the world with your new git skill!
