@@ -46,6 +46,7 @@ you will now be prompted to enter a commit message
 Once your changes are committed, your local copy of git is ready for later use. If you want to share it on a GitHub repository or alike, add a git remote to your local git (Note: you might need to head to GitHub to create a empty / bare repository first)
 
 `git remote add origin https://github.com/bowenwen/my_git_example.git`
+
 `git push -u origin master`
 
 You might now need a new branch, to either collaborate on a new feature or testing out stuff outside of your master branch code, to do this, simply run:
@@ -68,5 +69,16 @@ Finally, if you are interested in taking a closer look at the different branches
 
 `gitk`
 
+Now, if you want to merge the two branches on GitHub or alike, you may do so. Doing so brings master branch up to date to my_branch. Let's pull the changes from GitHub, and check out what have changed with `gitk`, let's do a last final commit to master to finish off this tutorial.
+
+`git checkout master`
+
+`git pull origin master`
+
+`git add.`
+
+`git commit`
+
+`git push origin master` 
 
 You are now ready to take on the world with your new git skill!
